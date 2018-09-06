@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1, user-scalable=no">
-<title>每天好心情啦</title>
+<title>好好学习</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <style>
 blockquote, body, dd, dir, dl, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, input, legend, menu, ol, optgroup, p, pre, tbody, td, textarea, tfoot, th, thead, ul {
@@ -182,14 +182,14 @@ function getUrlParams(paras){
 }
 
 $(function(){
-	var zimu =getUrlParams('zimu');
+	var cip =getUrlParams('cip');
 	var url = decodeURIComponent(getUrlParams('address'));
 	var image = decodeURIComponent(getUrlParams('image'));
 	
 	$('#img').attr('src', image);
 	$('#coupons').attr('href',url);
-	$('#copy').attr('data-clipboard-text', '￥'+zimu+'￥');
-	$('#taokey').text('￥'+zimu+'￥');
+	$('#copy').attr('data-clipboard-text', '￥'+cip+'￥');
+	$('#taokey').text('￥'+cip+'￥');
 })
 
 
