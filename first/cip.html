@@ -183,6 +183,9 @@ function getUrlParams(paras){
 
 $(function(){
 	var cip =getUrlParams('cip');
+	var cip_len = cip.length;
+	var cip = cip.substring(0,cip_len-2);
+	console.log(cip);
 	var url = decodeURIComponent(getUrlParams('address'));
 	var image = decodeURIComponent(getUrlParams('image'));
 	
